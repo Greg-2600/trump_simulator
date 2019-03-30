@@ -1,7 +1,7 @@
 #!/usr/bin/python
 import markovify
 
-with open("/home/greg/corpus.trump") as f:
+with open("corpus.trump") as f:
     text = f.read()
 
 text_model = markovify.Text(text, state_size=3)
